@@ -11,6 +11,7 @@ import { PageFooterComponent } from './components/layout/page-footer/page-footer
 import { PageThreeComponent } from './components/layout/page-three/page-three.component';
 import { PageFourComponent } from './components/layout/page-four/page-four.component';
 import { PageMegamixComponent } from './components/layout/page-megamix/page-megamix.component';
+import { PageHomeComponent } from './components/layout/page-home/page-home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PageMegamixComponent } from './components/layout/page-megamix/page-mega
     PageFooterComponent,
     PageThreeComponent,
     PageFourComponent,
-    PageMegamixComponent
+    PageMegamixComponent,
+    PageHomeComponent
   ],
   imports: [
     BrowserModule,

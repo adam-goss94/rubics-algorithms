@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
   items = [
+    { title: 'Home', route: '/home', active: false },
     { title: '3x3', route: '/3x3', active: false },
     { title: '4x4', route: '/4x4', active: false },
     { title: 'Megamix', route: '/megamix', active: false },
