@@ -6,7 +6,18 @@
   color: #EEEEEE;
   height: 80px;
 
-  .logo {
+  .title {
     font-size: 1.4rem;
   }
+  .language-select {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    text-transform: uppercase;
+    &-option {
+      cursor: pointer;
+      padding: 10px;
+    }
+  }
+
 }
