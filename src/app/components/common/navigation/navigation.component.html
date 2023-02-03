@@ -1,7 +1,7 @@
 <nav>
   <ul>
-    <li *ngFor="let item of items" [ngClass]="{'active': item.active}" (click)="onNavItemClick(item)">
-      <a [routerLink]="[item.route]">{{ item.title }}</a>
+    <li *ngFor="let item of items" [ngClass]="{'active': item.active}" [routerLink]="[item.route]" (click)="onNavItemClick(item)">
+      <a >{{ item.title }}</a>
     </li>
   </ul>
 </nav>
