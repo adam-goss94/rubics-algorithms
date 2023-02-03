@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { PageHeaderComponent } from './components/layout/page-header/page-header.component';
 import { NavigationComponent } from './components/common/navigation/navigation.component';
 import { ButtonComponent } from './components/common/button/button.component';
@@ -12,6 +13,10 @@ import { PageThreeComponent } from './components/layout/page-three/page-three.co
 import { PageFourComponent } from './components/layout/page-four/page-four.component';
 import { PageMegamixComponent } from './components/layout/page-megamix/page-megamix.component';
 import { PageHomeComponent } from './components/layout/page-home/page-home.component';
+
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +32,15 @@ import { PageHomeComponent } from './components/layout/page-home/page-home.compo
     PageHomeComponent
   ],
   imports: [
+    HttpClientModule,
+    TranslateModule.forRoot({
+      extend: true,
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
     BrowserModule,
     AppRoutingModule
   ],
@@ -34,3 +48,7 @@ import { PageHomeComponent } from './components/layout/page-home/page-home.compo
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

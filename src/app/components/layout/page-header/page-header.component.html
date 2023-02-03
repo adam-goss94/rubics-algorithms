@@ -1,4 +1,12 @@
 <div class="container">
-  <p class="logo">Algorytmy do kostek rubika</p>
+  <div class="language-select">
+    <span
+      class="language-select-option"
+      *ngFor="let language of translate.getLangs()"
+      (click)="switchLanguage(language)"
+      >{{ language }}</span
+    >
+  </div>
+  <p class="title">{{ "header_title" | translate }}</p>
   <app-navigation></app-navigation>
 </div>
