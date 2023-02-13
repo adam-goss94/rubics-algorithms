@@ -17,6 +17,7 @@ import { PageHomeComponent } from './components/layout/page-home/page-home.compo
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { DividerComponent } from './components/common/divider/divider.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     PageThreeComponent,
     PageFourComponent,
     PageMegamixComponent,
-    PageHomeComponent
+    PageHomeComponent,
+    DividerComponent
   ],
   imports: [
     HttpClientModule,
