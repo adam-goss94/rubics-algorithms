@@ -1,5 +1,11 @@
 {
   "welcome": "Welcome!",
   "header_title": "Rubic's cube algorithms",
-  "header_home": "Home"
+  "header_home": "Home",
+  "3x3_menuItem_first": "F2L - First two layers",
+  "3x3_menuItem_second": "OLL - Orient last layer",
+  "3x3_menuItem_third": "Pll - Permute last layer",
+  "4x4_menuItem_first": "Centers",
+  "4x4_menuItem_second": "Edges",
+  "4x4_menuItem_third": "Parity"
 }

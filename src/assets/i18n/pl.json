@@ -1,5 +1,11 @@
 {
   "welcome": "Witaj!",
   "header_title": "Algorytmy do kostek",
-  "header_home": "Strona główna"
+  "header_home": "Strona główna",
+  "3x3_menuItem_first": "F2L - Pierwsze dwie warstwy",
+  "3x3_menuItem_second": "OLL - Oriętacja ostatniej warstwy",
+  "3x3_menuItem_third": "Pll - Permutacja ostatniej warstwy",
+  "4x4_menuItem_first": "Środki",
+  "4x4_menuItem_second": "Krawędzie",
+  "4x4_menuItem_third": "Parzystość"
 }
