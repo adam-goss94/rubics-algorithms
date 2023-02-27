@@ -1,0 +1,11 @@
+{
+  "title": "megamix",
+  "menuItems": {
+    "1": "megamix_menuItem_first",
+    "2": "megamix_menuItem_second",
+    "3": "megamix_menuItem_third"
+  },
+  "algorithms": {
+    "Aa": "F, R, U"
+  }
+}
