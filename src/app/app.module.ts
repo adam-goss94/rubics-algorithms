@@ -18,6 +18,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DividerComponent } from './components/common/divider/divider.component';
+import { MenuItemsService } from './services/menu-items/menu-items.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { DividerComponent } from './components/common/divider/divider.component'
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MenuItemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
