@@ -1,4 +1,4 @@
-import { Pages } from './../../types/pages.interface';
+import { Pages } from 'src/app/types/pages.interface';
 import { Observable } from 'rxjs';
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
