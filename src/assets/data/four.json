@@ -1,0 +1,11 @@
+{
+  "title": "4x4",
+  "menuItems": {
+    "1": "4x4_menuItem_first",
+    "2": "4x4_menuItem_second",
+    "3": "4x4_menuItem_third"
+  },
+  "algorithms": {
+    "Aa": "F, R, U"
+  }
+}

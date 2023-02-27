@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { PageHeaderComponent } from './components/layout/page-header/page-header.component';
 import { NavigationComponent } from './components/common/navigation/navigation.component';
 import { ButtonComponent } from './components/common/button/button.component';
-import { PanelComponent } from './components/common/panel/panel.component';
+import { PanelComponent } from './components/common/menu-panel/menu-panel.component';
 import { PageFooterComponent } from './components/layout/page-footer/page-footer.component';
 import { PageThreeComponent } from './components/layout/page-three/page-three.component';
 import { PageFourComponent } from './components/layout/page-four/page-four.component';
@@ -18,6 +18,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DividerComponent } from './components/common/divider/divider.component';
+import { MenuItemsService } from './services/menu-items/menu-items.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { DividerComponent } from './components/common/divider/divider.component'
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MenuItemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
