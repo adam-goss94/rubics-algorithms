@@ -21,37 +21,37 @@ import { DividerComponent } from './components/common/divider/divider.component'
 import { MenuItemsService } from './services/menu-items/menu-items.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PageHeaderComponent,
-    NavigationComponent,
-    ButtonComponent,
-    PanelComponent,
-    PageFooterComponent,
-    PageThreeComponent,
-    PageFourComponent,
-    PageMegamixComponent,
-    PageHomeComponent,
-    DividerComponent
-  ],
-  imports: [
-    HttpClientModule,
-    TranslateModule.forRoot({
-      extend: true,
-      loader: {
-        provide: TranslateLoader,
-        useFactory: httpTranslateLoader,
-        deps: [HttpClient]
-      }
-    }),
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [MenuItemsService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        PageHeaderComponent,
+        NavigationComponent,
+        ButtonComponent,
+        PanelComponent,
+        PageFooterComponent,
+        PageThreeComponent,
+        PageFourComponent,
+        PageMegamixComponent,
+        PageHomeComponent,
+        DividerComponent,
+    ],
+    imports: [
+        HttpClientModule,
+        TranslateModule.forRoot({
+            extend: true,
+            loader: {
+                provide: TranslateLoader,
+                useFactory: httpTranslateLoader,
+                deps: [HttpClient],
+            },
+        }),
+        BrowserModule,
+        AppRoutingModule,
+    ],
+    providers: [MenuItemsService],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
 
 export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+    return new TranslateHttpLoader(http);
 }

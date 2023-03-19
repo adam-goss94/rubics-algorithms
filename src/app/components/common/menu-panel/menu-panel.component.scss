@@ -1,19 +1,19 @@
 .panel-container {
-  border-radius: 15px;
-  background-color: #FFFFFF;
-  box-shadow: 3px 4px 15px #222831;
-  width: 300px;
-  .title {
-    text-align: center;
-    font-weight: bold;
-    padding-top: 12px;
-    font-size: 18px;
-  }
-  .content {
-    font-family: "Inter";
-    font-style: normal;
-    color: #393e46;
-    font-size: 14px;
-    padding-bottom: 24px;
-  }
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 3px 4px 15px #222831;
+    width: 300px;
+    .title {
+        text-align: center;
+        font-weight: bold;
+        padding-top: 12px;
+        font-size: 18px;
+    }
+    .content {
+        font-family: 'Inter';
+        font-style: normal;
+        color: #393e46;
+        font-size: 14px;
+        padding-bottom: 24px;
+    }
 }

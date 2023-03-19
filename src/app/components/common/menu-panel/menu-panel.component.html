@@ -1,10 +1,9 @@
 <div class="panel-container">
-<h2 class="title">{{panelContent?.title}}</h2>
-<app-divider></app-divider>
-<ol class="content">
-    <li *ngFor="let menuItem of panelContent?.menuItems| keyvalue">
-    {{ menuItem.value | translate  }}
-  </li>
-</ol>
+    <h2 class="title">{{ panelContent?.title }}</h2>
+    <app-divider></app-divider>
+    <ol class="content">
+        <li *ngFor="let menuItem of panelContent?.menuItems | keyvalue">
+            {{ menuItem.value | translate }}
+        </li>
+    </ol>
 </div>
-
