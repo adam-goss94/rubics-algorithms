@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-page-megamix',
-  templateUrl: './page-megamix.component.html',
-  styleUrls: ['./page-megamix.component.scss']
+    selector: 'app-page-megamix',
+    templateUrl: './page-megamix.component.html',
+    styleUrls: ['./page-megamix.component.scss'],
 })
-export class PageMegamixComponent {
-
-}
+export class PageMegamixComponent {}

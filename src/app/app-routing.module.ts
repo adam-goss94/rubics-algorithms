@@ -6,14 +6,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'home', component: PageHomeComponent },
-  { path: '3x3', component: PageThreeComponent },
-  { path: '4x4', component: PageFourComponent },
-  { path: 'megamix', component: PageMegamixComponent },
+    { path: 'home', component: PageHomeComponent },
+    { path: '3x3', component: PageThreeComponent },
+    { path: '4x4', component: PageFourComponent },
+    { path: 'megamix', component: PageMegamixComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
 })
 export class AppRoutingModule {}
