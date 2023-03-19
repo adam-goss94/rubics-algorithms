@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class NavigationComponent implements OnInit {
   public items = [
-    { title: this.translate('header_home'), route: '/home', active: false },
+    { title: '', route: '/home', active: true },
     { title: '3x3', route: '/3x3', active: false },
     { title: '4x4', route: '/4x4', active: false },
     { title: 'Megamix', route: '/megamix', active: false },
@@ -18,13 +18,24 @@ export class NavigationComponent implements OnInit {
   constructor(private translateService: TranslateService) {}
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.items[0].title = this.translate('header_home');
+      this.items.forEach(item => {
+        if (item.active === true && item.title !== this.items[0].title) {
+          this.items[0].active = false;
+        }
+      });
+    }, 100);
+
+    this.translateService.onLangChange.subscribe(() => {
+      this.items[0].title = this.translate('header_home');
+    });
     const selectedItem = localStorage.getItem('selectedItem');
     this.items.forEach(item => {
       if (item.title === selectedItem) {
         item.active = true;
       }
     });
-
   }
 
   onNavItemClick(item: { active: boolean; title: string; }) {
